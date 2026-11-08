@@ -1,10 +1,13 @@
 ---
-title: Blog
-description: News and articles about this website.
-menu:
-  main:
-    weight: 10
-pagination:
-  max: 2
+title: Blog & Actualités
+description: Les dernières nouvelles, astuces et réflexions de JM Safari Tech.
 ---
-The latest posts, sorted by date and paginated (2 posts per page, see the `pagination` variable of `pages/blog/index.md`).
+
+# Le Blog de JM Safari Tech ✍️
+
+Bienvenue sur notre blog ! C'est ici que nous partageons nos dernières découvertes, nos réflexions sur l'évolution de la technologie, et nos conseils pour vous aider à rester à la pointe.
+
+**Au programme :**
+*   Des articles sur les nouveautés en Intelligence Artificielle.
+*   Des astuces de développement et des retours d'expérience.
+*   Des analyses sur les tendances du numérique en Afrique et dans le monde.
