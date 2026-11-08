@@ -23,3 +23,131 @@ article time {
   margin-bottom: $gap;
   color: var(--pico-muted-color);
 }
+
+/* =========================================
+   STYLES POUR LES PAGES DE CONTENU (Blog, About, Docs)
+   ========================================= */
+
+/* Conteneur principal pour centrer le texte et l'aérer */
+main, article, .content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    color: var(--text-main);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Titres */
+h1, h2, h3, h4 {
+    color: var(--text-main);
+    font-weight: 700;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+
+h1 {
+    font-size: 3rem;
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 1rem;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/* Paragraphes */
+p {
+    margin-bottom: 1.5rem;
+    color: var(--text-muted);
+}
+
+/* Liens */
+a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+}
+
+/* Listes à puces */
+ul, ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    color: var(--text-muted);
+}
+
+li {
+    margin-bottom: 0.8rem;
+}
+
+ul li::marker {
+    color: var(--primary);
+    font-size: 1.2em;
+}
+
+/* Citations (Blockquotes) */
+blockquote {
+    border-left: 4px solid var(--primary);
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: var(--text-muted);
+    background-color: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: 0 8px 8px 0;
+}
+
+/* Blocs de code (pour la page Documentation) */
+pre {
+    background-color: #000000 !important;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    overflow-x: auto;
+    margin-bottom: 2rem;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--primary);
+    background-color: rgba(245, 158, 11, 0.1);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+    color: #e2e8f0;
+}
+
+/* Séparateurs */
+hr {
+    border: 0;
+    height: 1px;
+    background: var(--border-color);
+    margin: 3rem 0;
+}
+
+/* Adaptation pour mobile */
+@media (max-width: 768px) {
+    main, article, .content {
+        padding: 2rem 1rem;
+    }
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.8rem; }
+}
